@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+body{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('../img/products/flashDanz\ france\ farm.webp');
+    background-position: top center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.login-box h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+.login-box{
+    width: 440px;
+    height: 350px;
+    padding: 20px;
+    background: #85828254;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 70px;
+}
+.input-box input{
+    width: 100%;
+    font-size: 17px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.submit-btn{
+    width: 100%;
+    background: #222;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+.sign-up-link{
+    text-align: center;
+    margin-top: 10px;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#navbar a {
+    padding: 0 40px;
+    color:rgba(255, 255, 255, 0.842);
+    font-size: 1.3rem;
+    
+}
+#burgerMenu,
+.burger-btn {
+    display: none;
+}
+
+/* Query 480 */
+@media only screen and (max-width: 480px) {
+
+    /* NavBar */
+    /* MOBILE MENU */
+    .burger-btn {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/mobile-icons/menu.svg),
+            url(../img/mobile-icons/close.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px, 20px 20px;
+        background-position: center, left 50px;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    #burgerMenu {
+        display: none;
+        width: 100%;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    #burgerMenu a {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        padding: 5px 0 2px 0;
+    }
+
+    #navbar {
+        display: none;
+    }
+}

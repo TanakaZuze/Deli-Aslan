@@ -1,0 +1,634 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--headerColor);
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    color: var(--headerColor);
+}
+
+:root {
+    --headerColor: rgba(0, 0, 0, 0.658);
+    --missionHeader: rgba(255, 255, 255, 0.87);
+    --footerBgColor: rgba(0, 0, 0, 0.89);
+    --hover-color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.xlContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar and herosection */
+#navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+#navbar a {
+    padding: 0 40px;
+    color: var(--headerColor);
+    font-size: 1.3rem;
+}
+
+.heroImg img {
+    height: 380px;
+    object-fit: contain;
+}
+
+.heroBtn {
+    border: 1px solid var(--headerColor);
+    padding: 5px 50px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#heroBanner {
+    display: grid;
+    place-items: center;
+}
+
+.heroHeader h1 {
+    margin: 60px 0 30px 0;
+    font-weight: 100;
+}
+
+/* Carousel */
+.carouselHeader {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.carouselHeader h1 {
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    line-height: 0.8;
+}
+
+.carouselHeader p {
+    font-size: 18px;
+}
+
+#slider-1 img {
+    height: 500px;
+    object-fit: cover;
+}
+
+#slider-1 {
+    margin: 30px 0 70px 0;
+}
+
+/* AboutSection */
+#aboutSection {
+    display: grid;
+    grid-template-columns: 50% auto;
+    margin-bottom: 50px;
+}
+
+.abtContent h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 100;
+}
+
+.aboutParagraph {
+    width: 80%;
+    margin: auto;
+}
+
+.abtImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* mission statement section */
+#missionStatement {
+    background-image: url(../img/hero-images/luis-barros-XOytueZ3Usc-unsplash.webp);
+    height: 70vh;
+    background-position: center b;
+    background-size: cover;
+    align-content: center;
+}
+
+#missionStatement h1 {
+    text-align: center;
+    color: var(--missionHeader);
+    font-weight: 100;
+    font-size: 3em;
+}
+
+/* SHOP PAGE */
+.shopHeader h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.grid1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+#shopGrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.addCartbtn {
+    border: 1px solid var(--headerColor);
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 30px;
+}
+.addCartbtn:hover {
+    background-color: #000000bd;
+    color: white;
+}
+
+.grid1 h3,
+p {
+    display: inline-block;
+    display: block;
+    font-weight: 100;
+    margin-bottom: 7px;
+}
+.grid1 h3{
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
+.grid1 h4{
+    font-size: 1.2rem;
+}
+/* footer */
+.footerSection {
+    background-color: var(--footerBgColor);
+    min-height: 10vh;
+    color: var(--missionHeader);
+}
+
+#footerGrid {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#siteMap,
+h2 {
+    display: flex;
+    flex-direction: column;
+    color: var(--missionHeader);
+    margin-bottom: 10px;
+    font-weight: 50;
+}
+
+#siteMap a {
+    color: var(--missionHeader);
+    margin-bottom: 5px;
+}
+
+#socialLinks a {
+    margin-right: 15px;
+}
+
+#attributes {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.322);
+    background-color: rgba(0, 0, 0, 0.733);
+    padding: 3px;
+}
+
+#burgerMenu,
+.burger-btn {
+    display: none;
+}
+
+/* Single products */
+#single-products {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-column-gap: 50px;
+    margin-top: 120px;
+    text-align: left;
+}
+
+.product-description h1 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.product-description p {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.product-description h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.product-description button {
+    border: 1px var(--headerColor) solid;
+    padding: 10px 35px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.product-description button:hover {
+    background-color: #000000bd;
+    color: white;
+}
+
+.description-header {
+    font-weight: bolder;
+}
+
+/* RESPONSIVE VERSION */
+/* Query 480 */
+@media only screen and (max-width: 480px) {
+
+    /* NavBar */
+    /* MOBILE MENU */
+    .burger-btn {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/mobile-icons/menu.svg),
+            url(../img/mobile-icons/close.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px, 20px 20px;
+        background-position: center, left 50px;
+        margin-bottom: 10px;
+        padding: 20px;
+        cursor: pointer; /* Add this for better UX */
+    }
+
+    #burgerMenu {
+        display: none;
+        width: 100%;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    #burgerMenu a {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        padding: 5px 0 2px 0;
+    }
+    
+    #navbar {
+        display: none;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* HERO BANNER */
+    #heroBanner {
+        display: block;
+        text-align: center;
+    }
+
+    .heroHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroImg img {
+        height: 140px;
+        object-fit: contain;
+    }
+
+    .heroBtn {
+        padding: 3px 25px;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Carousel */
+    .carouselHeader {
+        margin-top: 20px;
+    }
+
+    .carouselHeader h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    .carouselHeader p {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+
+    #slider-1 img {
+        height: 350px;
+    }
+
+    #slider-1 {
+        margin-bottom: 20px;
+    }
+
+    /* About section */
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .abtContent h1 {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
+
+    .aboutParagraph {
+        width: 100%;
+    }
+
+    .aboutParagraph p {
+        font-size: 60px;
+    }
+
+    .aboutParagraph {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    /* Mission statement */
+    #missionStatement {
+        height: 40vh;
+    }
+
+    #missionStatement h1 {
+        font-size: 1rem;
+    }
+
+    /* Footer section */
+    #footerGrid {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    #siteMap h2 {
+        font-size: 1.2rem;
+    }
+
+    #siteMap a {
+        margin-bottom: 2px;
+    }
+
+    #socialLinks h2 {
+        font-size: 1.2rem;
+    }
+
+    .socialLinks img {
+        width: 15px;
+        height: 15px;
+    }
+
+    /* Shopping page */
+    #shopGrid {
+        display: block;
+    }
+
+    .grid1 {
+        margin-bottom: 10px;
+    }
+
+    .grid1 img {
+        width: 100%;
+    }
+}
+
+/* 768 */
+
+/* 768 */
+@media only screen and (max-width: 768px) {
+
+    /* Navbar */
+    .burger-btn {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-image: url(../img/mobile-icons/menu.svg),
+            url(../img/mobile-icons/close.svg);
+        background-repeat: no-repeat;
+        background-size: 20px 20px, 20px 20px;
+        background-position: center, left 50px;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    #burgerMenu {
+        display: none;
+        width: 100%;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    #burgerMenu a {
+        display: block;
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        padding: 5px 0 2px 0;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    /* Home page and Navbar */
+    #navbar a {
+        padding: 0 20px;
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .heroImg img {
+        height: 240px;
+    }
+
+    .heroBtn {
+        padding: 3px 25px;
+        margin-top: 10px;
+    }
+
+    /* Carousel */
+    /* Carousel */
+    .carouselHeader {
+        margin-top: 20px;
+    }
+
+    /* .carouselHeader h1 {
+        font-size: 2.3rem;
+        margin-bottom: 7px;
+    } */
+
+    .carouselHeader p {
+        font-size: 1.1rem;
+    }
+
+    #slider-1 img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    /* About */
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .abtContent h1 {
+        margin: 15px 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+    .aboutParagraph {
+        width: 80%;
+    }
+
+    /* Mission statement */
+    #missionStatement {
+        height: 50vh;
+    }
+
+    #missionStatement h1 {
+        font-size: 1.8rem;
+    }
+
+    /* footer */
+    #footerGrid {
+        padding: 20px;
+        width: 100%;
+    }
+
+    #socialLinks h2 {
+        font-size: 1.2rem;
+    }
+
+    #siteMap h2 {
+        font-size: 1.2rem;
+    }
+
+    /* Shoppimg page */
+    #shopGrid {
+        grid-template-columns: auto auto;
+        margin-top: 20px;
+    }
+    /* single product */
+    #single-products {
+        display: block;
+        width: 80%;
+        margin: auto;
+        /* grid-template-columns: 50% auto;
+        grid-column-gap: 50px;
+        margin-top: 120px;
+        text-align: left; */
+    }
+}
+
+/* 992px */
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    #navbar a {
+        font-size: 1.2rem;
+    }
+
+    .carouselHeader {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* .carouselHeader h1 {
+        font-size: 38px;
+        font-weight: 100;
+        margin-bottom: 8px;
+    } */
+
+    .abtContent h1 {
+        margin-bottom: 10px;
+    }
+
+    #aboutSection {
+        grid-column-gap: 10px;
+    }
+
+    .abtImg img {
+        height: 315px;
+    }
+
+    .aboutParagraph {
+        width: 80%;
+    }
+
+    #missionStatement {
+        height: 70vh;
+    }
+
+    #footerGrid {
+        padding: 10px;
+        width: 80%;
+    }
+
+    #socialLinks h2 {
+        font-size: 1.2rem;
+    }
+
+    #siteMap h2 {
+        font-size: 1.2rem;
+    }
+
+    /* shopping section */
+    #shopGrid {
+        grid-template-columns: auto auto;
+    }
+
+    .grid1 img {
+        width: 100%;
+    }
+}
